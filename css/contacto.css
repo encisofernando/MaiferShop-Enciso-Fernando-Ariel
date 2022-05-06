@@ -11,84 +11,12 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-/* HTML HEADER */
-
 header {
-    background-color: rgba(0,0,0,0.8);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     position: sticky;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
-  }
-
-.logo {
-    color: #fff;
-    padding: 1rem;
-    margin: 1rem;
-    text-align: center;
-}
-
-.logo__marca {
-    color: #fff;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-/* MENU */
-
-.menu {
-    padding: 1rem;
-    text-align: center;
-}
-
-.menu__lista {
-    list-style: none;
-    font-size: 0;
-    display: inline;
-}
-
-.menu__item {
-    margin-left: 1rem;
-    display: inline-block;
-    position:relative;
-    font-size: 1rem;
-    padding-top: 15px;
-    padding-bottom: 12px;
-}
-
-.menu__enlace {
-    color: #fff;
-    text-decoration: none;
-}
-
-.menu ul ul {
-    position: absolute;
-    display: none;
-    width: 100%;
-    
-}
-
-.menu ul ul li {
-    display: block;
- }
-
-.menu ul li:hover ul {
-    display:block;
-    background-color: rgba(0,0,0,0.8);
- }
-
-.menu__open {
-    display: none;
-}
-
-.menu__cerrar {
-    display: none;
 }
 
 .container {
@@ -109,9 +37,10 @@ ul {
     padding: 0;
 }
 
+
 .header__logo {
     padding-left: 1em;
-    font-size: 3em;
+    font-size: 2em;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -119,6 +48,14 @@ ul {
 .header__logo span {
     color: #07d656;
     font-weight: bold;
+}
+
+.navbar-propio {
+    flex-grow: 0;
+}
+
+.navbar-nav {
+    font-size: 1.2em;
 }
 
 .contact-wrapper {
