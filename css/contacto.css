@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* HTML HEADER */
+
+header {
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+.logo {
+    color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.logo__marca {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* MENU */
+
+.menu {
+    padding: 1rem;
+    text-align: center;
+}
+
+.menu__lista {
+    list-style: none;
+    font-size: 0;
+    display: inline;
+}
+
+.menu__item {
+    margin-left: 1rem;
+    display: inline-block;
+    position:relative;
+    font-size: 1rem;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+
+.menu__enlace {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu ul ul {
+    position: absolute;
+    display: none;
+    width: 100%;
+    
+}
+
+.menu ul ul li {
+    display: block;
+ }
+
+.menu ul li:hover ul {
+    display:block;
+    background-color: rgba(0,0,0,0.8);
+ }
+
+.menu__open {
+    display: none;
+}
+
+.menu__cerrar {
+    display: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.content {
+    margin: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header__logo {
+    padding-left: 1em;
+    font-size: 3em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.header__logo span {
+    color: #07d656;
+    font-weight: bold;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #3af782;
+}
+
+.contact-form form button {
+    background: #07d656;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #3af782;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.maps {
+    width: 100%;
+    height: 50vh;
+    border: 0;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+.pie-pagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.8);
+    align-items: center;
+    position: sticky;
+    width: 100%;
+}
+
+.info {
+    line-height: 1.6;
+}
+
+.info li {
+    margin-left: 1rem;
+    display: inline-block;
+    position:relative;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+
+.info li a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.newsletter {
+    display: flex;
+    margin-right: 1em;
+}
+
+.newsletter input {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: .5em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #3af782;
+}
+
+.newsletter button {
+    color: #fff;
+    background: #07d656;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+
+.newsletter button:hover,
+.newsletter button:focus {
+    background: #3af782;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}

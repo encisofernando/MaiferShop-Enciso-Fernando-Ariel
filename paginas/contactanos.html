@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAIFER - Contacto</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="../css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MaiferShop - Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+ <!--  <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 </head>
 <body>
 
     <header class="header">
-        <div class="logo">
+        <a href="../index.html" class="header__logo">Maifer <span>Shop</span></a>
+        <!--<div class="logo">
             <a href="../index.html" class="logo__marca">MAIFER-Shop</a>
-        </div>
+        </div>-->
         <a href="#lateral"><svg class="menu__open" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" width="24" fill="currentColor"><path d="M1 0h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 8h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0-4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg></a>
         <nav class="menu" id="lateral">
             <ul id="menu__lista">
@@ -42,66 +46,82 @@
             </ul>
           </nav>
 
-</header>
+    </header>
 
-<main class="contacto">
+    <main>
 
-    <div class="contacto-contenedor">
-   
-        <div class="contacto-form">
-        <form>
-            <div>
-               <label for="nombre">Nombre:</label>
-               <input type="text" name="nombre" placeholder="Ingrese su nombre">    
-           </div>
-           <div>
-               <label for="apellido">Apellido:</label>
-               <input type="text" name="apellido" placeholder="Ingrese su apellido">    
-           </div>
-           <div>
-               <label for="asunto">Asunto:</label>
-               <input type="text" name="asunto" placeholder="Ingrese motivo de contacto">    
-           </div>
-           <div>
-            <label for="correo">Correo:</label>
-            <input type="email" name="correo" placeholder="Ingrese su correo">    
+    <div class="content">
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contactanos</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="nombre">
+                    </p>
+                    <p>
+                        <label>Apellido</label>
+                        <input type="text" name="apellido">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="asunto">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
             </div>
-            <div class="block">
-                <label for="comentario">Comentario:</label>
-                <textarea id="comentario" class="input" name="comentario" rows="7" cols="30"></textarea>
-              </div>
-           <div class="block">
+            <div class="contact-info">
+                <h4>Mas Información</h4>
+                <ul>
+                    <li><i class="jam jam-map-marker"></i> Argentina</li>
+                    <li><i class="jam jam-phone"></i> (111) 111 111 111</li>
+                    <li><i class="jam jam-envelope-open"></i> contacto@maifer.com.ar</li>
+                </ul>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.96615315807!2d-58.21406435759799!3d-26.197779293374435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x18bd5408a4699343!2zMjbCsDExJzUyLjAiUyA1OMKwMTInNDYuMiJX!5e0!3m2!1ses-419!2sar!4v1651675555034!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+</main> 
+
+<footer class="pie-pagina">
+    <div class="info">
+        <ul>
+            <li class="jam jam-instagram">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li class="jam jam-facebook-square">
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li class="jam jam-twitter">
+                <a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
+        </ul>
+    </div>
+    
+    <div class="newsletter">
+        <p>
+            <label>Suscribite a nuestro newsletter</label>
+            <input type="email" name="email">
+        </p>
+        <p class="block">
             <button>
                 Enviar
             </button>
-           </div>
-        </form>
-        </div>
-        <div class="contacto-info">
-            <h4>Más Información</h4>
-            <ul>
-                <li><i class="fas fa-map-marker-alt"></i> Argentina</li>
-                <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
-                <li><i class="fas fa-envelope-open-text"></i> contacto@maifer.com.ar</li>
-            </ul>
-            <p>Sección para agregar Mapa</p>
-            <p>maps.google.com</p>
-        </div>
-    </div>
-    <br>
-</main>
-<footer class="pie-pagina">
-        <div class="info">
-            <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
-            <p><a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></p>
-            <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
-        </div>
-        
-    <div class="newsletter">
-        <label for="Email">Suscribite a nuestro newsletter</label>
-        <input type="Email" name="Email">
-        <input type="submit" name="Email">
+        </p>
     </div>
 </footer>
+
 </body>
 </html>
