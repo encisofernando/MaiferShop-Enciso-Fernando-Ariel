@@ -1,0 +1,153 @@
+/* LISTA DE PRODUCTOS */
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: -3rem;
+}
+
+.lista__div{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lista__div img{
+    width: 350px;
+    height: 350px;
+}
+
+.lista__link{
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    font-size: 18.5px;
+}
+
+.zoom {    
+    transition: all 0.5s;
+}
+ 
+.zoom:hover {
+    transform: scale(1.1); 
+    background-color:black;
+    padding: 5px;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 1200px) {
+
+    .lista{
+        flex-direction: column;
+    }
+
+    .lista__link{
+        display: inline-block;
+        color: black;
+        font-size: 18.5px;
+    }
+
+    .catalogo{
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 400px 400px;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .inicio__bienvenida {
+        font-size: 20px;
+    }
+    .inicio__bienvenida h2 {
+        padding: 1rem;
+        font-size: 18px;
+    }
+    .inicio__info {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .contacto {
+        padding: 0 4em;
+    }
+    .contacto-contenedor {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contacto-contenedor > * {
+        padding: 2em;
+    }
+    .contacto-info h4,
+    .contacto-info ul,
+    .contacto-info p {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .catalogo{
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 400px;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .catalogo{
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 400px;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+
+    .lista{
+        flex-direction: column;
+    }
+
+    .lista__link{
+        font-size: 16px;
+    }
+
+    .lista__div img{
+        height: 300px;
+        width: 300px;
+    }
+
+    ul li:hover ul {
+        display:inline-block;
+        background-color: black;
+     }
+}
+
+@media screen and (max-width: 280px) {
+
+    .lista__div img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .tarjeta{
+        background-color: black;
+        color: white;
+        width: 200px;
+        max-height: 400px;
+        padding: 15px 15px 15px 15px;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 1rem;
+     }
+}
