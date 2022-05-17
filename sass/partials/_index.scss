@@ -1,0 +1,36 @@
+/* INDEX */
+
+.inicio {
+    background: rgba(255, 255, 255, .3);
+    color: #fff;
+    text-align: center;
+}
+
+.inicio__bienvenida {
+    padding: 1rem;
+}
+
+.inicio__bienvenida h1 {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.inicio__bienvenida h2 {
+    text-align: center;
+}
+
+.card__index {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    width: 320px;
+}
+
+.card__img {
+    margin: auto;
+    width: 200px;
+}
+
+.card__parrafo, .card__parrafo h4, .card__parrafo p {
+    font-weight: bold;
+    color: #fff;
+}

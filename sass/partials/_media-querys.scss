@@ -1,0 +1,47 @@
+/* MEDIA CONTACTO */
+@media(min-width: 700px) {
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 700px) {
+
+    .inicio__bienvenida {
+        font-size: 20px;
+    }
+    .inicio__bienvenida h2 {
+        padding: 1rem;
+        font-size: 18px;
+    }
+    .inicio__info {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .catalogo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 990px) {
+    .lista-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
