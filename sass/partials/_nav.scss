@@ -5,8 +5,8 @@
 }
 
 body {
-    background: #181818;
-    color: #fff;
+    background: $color-body;
+    color: $color;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
 }
@@ -35,14 +35,14 @@ ul {
 
 .header__logo {
     padding-left: 1em;
-    font-size: 2em;
+    font-size: 1em;
     text-decoration: none;
-    color: #fff;
+    color: $color;
     font-weight: bold;
 }
 
 .header__logo span {
-    color: #07d656;
+    color: $color-logo_span;
     font-weight: bold;
 }
 

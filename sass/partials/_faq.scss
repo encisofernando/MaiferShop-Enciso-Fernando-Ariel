@@ -1,7 +1,7 @@
 /* HTML AYUDA */
 
 .ayuda {
-    background-color: rgba(255, 255, 255, .3);
+    background-color: $color-header;
     color: black;
     padding-bottom: 1em;
 }
@@ -9,7 +9,7 @@
 .ayuda__titulo {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-	color: #fff;
+	color: $color;
 	font-weight: 700;
 	text-align: center;
 }
