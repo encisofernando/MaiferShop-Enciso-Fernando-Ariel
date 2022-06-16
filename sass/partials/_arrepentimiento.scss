@@ -1,4 +1,14 @@
 /* BOTON ARREPENTIMIENTO */
+.btn-arrep {
+    border: solid;
+    border-radius: 1em;
+    padding: 0.5em;
+    text-decoration: none;
+    border-color: $color-logo_span;
+}
+.btn-arrep-1 {
+    margin-top: 1em;
+}
 
 .arre-titulo {
     color: $color-logo_span;
