@@ -1,0 +1,22 @@
+/* BOTON ARREPENTIMIENTO */
+
+.arre-titulo {
+    color: $color-logo_span;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+ 
+.arrepentimiento {
+    background-color: $color-header;
+    color: $color;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-left: 25%;
+    padding-right: 25%;
+}

@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Tienda online de venta minorista en articulos de bazar, limpieza y librería">
     <meta name="keywords"  content="BAZAR, LIMPIEZA, LIBRERIA, TIENDA, ONLINE, SHOP, MINORISTA">
-    <title>MaiferShop - Contacto</title>
-    
+    <title>Maifer-Shop</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>  
-    <!--  <link rel="stylesheet" href="../css/style.css"> -->
+
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <!-- GOOGLE FONTs -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -23,11 +23,10 @@
 
 </head>
 <body>
-
     <header class="header">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid">
-                <h1><a class="navbar-brand header__logo" href="./index.html">Maifer-<span>Shop</span></a></h1>
+                <h1><a class="navbar-brand header__logo" href="../index.html">Maifer-<span>Shop</span></a></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -58,95 +57,126 @@
     </header>
 
     <main>
+          <!-- FORMULARIO ARREPENTIMIENTO -->
+          <form class="arrepentimiento">
 
-    <div class="content">
+            <span class="arre-titulo mt-3 mb-3">Botón de arrepentimiento</span>
+            <span class="arre-subtitulo mb-3">COMPLETÁ EL FORMULARIO CON LOS SIGUIENTE DATOS:</span>
 
-        <div class="contact-wrapper animated bounceInUp">
-            <div class="contact-form">
-                <h3>Contactanos</h3>
-                <form action="">
-                    <p>
-                        <label>Nombre</label>
-                        <input type="text" name="nombre">
-                    </p>
-                    <p>
-                        <label>Apellido</label>
-                        <input type="text" name="apellido">
-                    </p>
-                    <p>
-                        <label>Email</label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Asunto</label>
-                        <input type="text" name="asunto">
-                    </p>
-                    <p class="block">
-                       <label>Mensaje</label> 
-                        <textarea name="message" rows="3"></textarea>
-                    </p>
-                    <p class="block">
-                        <button>
-                            Enviar
-                        </button>
-                    </p>
-                </form>
+            <div class="form-row">
+                <div class="col mb-3">
+                    <label for="validarNombre">Nombre y Apellido: <span class="red">*</span></label>
+                    <input type="text" class="form-control" id="" name="validarNombre" placeholder="Ingresá un nombre correcto." required>
+                </div>
             </div>
-            <div class="contact-info">
-                <h4>Mas Información</h4>
-                <ul>
-                    <li><i class="jam jam-map-marker"></i> Argentina</li>
-                    <li><i class="jam jam-phone"></i> (111) 111 111 111</li>
-                    <li><i class="jam jam-envelope-open"></i> contacto@maifer.com.ar</li>
-                </ul>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.96615315807!2d-58.21406435759799!3d-26.197779293374435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x18bd5408a4699343!2zMjbCsDExJzUyLjAiUyA1OMKwMTInNDYuMiJX!5e0!3m2!1ses-419!2sar!4v1651675555034!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
+
+            <div class="form-row">
+              <div class="col mb-3">
+                  <label for="validarTelefono">Teléfono:</label>
+                  <input type="number" class="form-control" id="" name="validarTelefono" max="999999999" placeholder="Ingresá un número de teléfono.">
+              </div>
             </div>
-        </div>
 
-    </div>
+            <div class="form-row">
+              <div class="col mb-3">
+                  <label for="validarEmail">Email: <span class="red">*</span></label>
+                  <input type="email" class="form-control" id="" name="validarEmail" placeholder="Ingresá un e-mail correcto."  required>
+              </div>
+            </div>
 
-    </main> 
+            <div class="form-row">
+                <div class="col mb-3">
+                    <label for="validarPedido">Nº de pedido: <span class="red">*</span></label>
+                    <input type="text" class="form-control" id="" name="validarPedido" placeholder="Ingresá el número de pedido." required>
+                </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col mb-3">
+                  <label for="validarImporte">Importe: <span class="red">*</span></label>
+                  <input type="number" class="form-control" id="" name="validarImporte" placeholder="Ingresá el importe de tu compra." required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col mb-3">
+                  <label for="validarFecha">Fecha de compra: <span class="red">*</span></label>
+                  <input type="date" step="1" name="validarFecha" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col mb-3">
+                  <label for="validarProducto">Producto: <span class="red">*</span></label>
+                  <input type="text" class="form-control" id="" name="validarProducto" placeholder="Ingresá el producto que compraste." required>
+              </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col mb-3">
+                    <label for="validarMotivo">Motivo: <span class="red">*</span></label>
+                    <select class="custom-select" id="" name="validarMotivo" required>
+                        <option selected disabled value="">Selecciona...</option>
+                        <option value="">Llego con problemas</option>
+                        <option value="">Me arrepenti de la compra</option>
+                        <option value="">No era lo que esperaba</option>
+                        <option value="">Otras cuestiones</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="validationMensaje">Detalle: <span class="red">*</span></label>
+                <textarea class="form-control" id="" name="validationMensaje" rows="3" min="25" placeholder="Indique brevemente la acción a realizar: reintegro, devolución, otro." required></textarea>
+            </div>
+
+            <div class="form-group mb-3">
+                <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+                <button class="btn btn-success" type="reset" name="reset">Limpiar</button>
+            </div>
+
+          </form>
+    </main>
 
     <footer class="bg-dark text-center text-white">
 
         <div class="container p-4">
-
+    
           <section class="mb-4">
-
+    
             <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-facebook-f"></i
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button" target="_blank"><i class="fab fa-facebook-f"></i
             ></a>
       
             <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-twitter"></i
+            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" role="button"
+            target="_blank"  ><i class="fab fa-twitter"></i
             ></a>
       
             <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-google"></i
+            <a class="btn btn-outline-light btn-floating m-1" href=" https://www.google.com/" role="button"
+            target="_blank"  ><i class="fab fa-google"></i
             ></a>
       
             <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-instagram"></i
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
+            target="_blank"  ><i class="fab fa-instagram"></i
             ></a>
       
             <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-linkedin-in"></i
+            <a class="btn btn-outline-light btn-floating m-1" href="https://ar.linkedin.com/" role="button"
+            target="_blank"  ><i class="fab fa-linkedin-in"></i
             ></a>
       
             <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-github"></i
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/encisofernando/MaiferShop-Enciso-Fernando-Ariel" role="button"
+            target="_blank"  ><i class="fab fa-github"></i
             ></a>
-
+    
           </section>
       
           <section class="">
-
+    
             <form action="">
               <div class="row d-flex justify-content-center">
                 <div class="col-auto">
@@ -160,7 +190,7 @@
                     <input type="email" id="form5Example21" class="form-control" placeholder="Ingresa tu email"/>
                   </div>
                 </div>
-
+    
                 <div class="col-auto">
                   <button type="submit" class="btn btn-outline-light mb-4">
                     Suscribir
@@ -168,7 +198,7 @@
                 </div>
               </div>
             </form>
-
+    
           </section>
       
           <section class="mb-4">
